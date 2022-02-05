@@ -125,4 +125,32 @@ footer {
     color: var(--dark-blue)
 }
 
+@media only screen and (max-width: 480px){
+
+    .container {
+        width: min(50vw,800px);
+        margin: auto;
+    }
+    
+    .responsive {
+    display: block;
+    position: relative;
+    width: 100%;}
+
+    .responsive thead, .responsive tbody, .responsive th, .responsive td, .responsive tr {
+        display: block;
+    }
+    .responsive td,
+    .responsive th {
+        height: 35px;
+        font-size:0.5em;
+    }
+    .table-responsive tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+      }
+}
 
