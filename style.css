@@ -128,7 +128,7 @@ footer {
 @media only screen and (max-width: 480px){
 
     .container {
-        width: min(50vw,800px);
+        width: min(90vw);
         margin: auto;
     }
     
@@ -138,14 +138,16 @@ footer {
     width: 100%;}
 
     .responsive thead, .responsive tbody, .responsive th, .responsive td, .responsive tr {
-        display: block;
+        display:/block;
     }
     .responsive td,
     .responsive th {
         height: 35px;
         font-size:0.5em;
+        margin: 0%;
+        padding: 1rem 1.8rem;
     }
-    .table-responsive tbody {
+    .responsive tbody {
         width: auto;
         position: relative;
         overflow-x: auto;
