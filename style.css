@@ -78,6 +78,8 @@ header {
 
 }
 
+
+
 table th {
     background-color: white;
     color:#969cb3;
@@ -91,7 +93,11 @@ table tbody tr {
 
 table tr:hover {
     opacity: 1;
+       
 }
+
+
+
 
 table td {
     background-color: white;
@@ -128,31 +134,26 @@ footer {
 @media only screen and (max-width: 480px){
 
     .container {
-        width: min(90vw);
+                
         margin: auto;
     }
-    
-    .responsive {
-    display: block;
-    position: relative;
-    width: 100%;}
 
-    .responsive thead, .responsive tbody, .responsive th, .responsive td, .responsive tr {
-        display:/block;
+    .responsive thead tr th {
+        font-size: 1.2em ;
     }
-    .responsive td,
-    .responsive th {
-        height: 35px;
-        font-size:0.5em;
-        margin: 0%;
-        padding: 1rem 1.8rem;
+
+    .responsive th, .responsive tr {
+        font-size: 0.5em;  
+        text-align: left;
+        padding: 1rem 0.8rem;           
+       
     }
-    .responsive tbody {
-        width: auto;
-        position: relative;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
-      }
+    table td {
+    background-color: white;
+    padding: 1rem 0.8rem;
+    font-weight: normal;
+    } 
+
+     
 }
 
