@@ -301,26 +301,7 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem
     }
-    .container {
-                
-        margin: auto;
-    }
-    
-    .responsive thead tr th {
-        font-size: 1.2em ;
-    }
-
-    .responsive th, .responsive tr {
-        font-size: 0.5em;  
-        text-align: left;
-        padding: 1rem 0.8rem;           
-       
-    }
-    table td {
-    background-color: white;
-    padding: 1rem 0.8rem;
-    font-weight: normal;
-    } 
+     
 
 }
     
