@@ -1,6 +1,9 @@
 /* Config Global*/
 :root {
     --dark-blue: #363f5f;
+    --green:#49aa26;
+    --light-green:#3dd705;
+    --red: #e92929;
 }
 * {
     margin: 0;
@@ -51,9 +54,43 @@ a:hover {
     color: #3dd705;
 }
 
+
+/* buttons ========*/
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: var(--green);
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-green);
+}
+
 .button.new {
     display: inline-block
     margin-bottom: .8rem;
+}
+
+.button.cancel {
+    color: var(--red);
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button.cancel:hover{
+    background: var(--light-green);
 }
 
 
@@ -104,17 +141,21 @@ header {
 }
 
 .card.total {
-    background-color:#49aa26 ;
+    background-color:var(--green);
 }
 
 /* table  =====*/
-#data-table {
+#transaction {
     display: block;
+    width: 100%;
+    overflow: auto;
+}
+#data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
     color: var(--dark-blue);
 
-    overflow-x:auto;
+    
 }
 
 
@@ -166,6 +207,81 @@ td.income {
 td.expense {
     color: #e92929
 }
+
+/* modal */
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    
+    position:fixed;
+    top:0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.modal {
+    background-color: #f0f2f5;
+    padding: 2.4rem;
+  
+  
+}
+
+/*form ================*/ 
+#form {
+    max-width: 500px;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+input {
+    border: none;
+    border-radius: 0.2rem;
+
+    padding: 0.8rem;
+    width: 100%;
+
+}
+
+.input-group {
+
+    margin-top: 0.8rem;
+
+}
+
+.input-group small {
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+
+    width: 48%;
+
+}
+
+
+
+
 /* footer  =====*/
 footer {
     text-align: center;
@@ -185,6 +301,27 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem
     }
+    .container {
+                
+        margin: auto;
+    }
+    
+    .responsive thead tr th {
+        font-size: 1.2em ;
+    }
+
+    .responsive th, .responsive tr {
+        font-size: 0.5em;  
+        text-align: left;
+        padding: 1rem 0.8rem;           
+       
+    }
+    table td {
+    background-color: white;
+    padding: 1rem 0.8rem;
+    font-weight: normal;
+    } 
+
 }
     
 /* teste ajuste reponsivo
